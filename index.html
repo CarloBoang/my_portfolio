@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carlo Boang's Portfolio</title>
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Google Fonts (Inter) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="boangStyle.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <a href="#" onclick="showOnly('about')">About Me</a>
+    <a href="#" onclick="showOnly('hobbies')">Hobbies</a>
+    <a href="#" onclick="showOnly('skills')">Skills</a>
+    <a href="#" onclick="showOnly('works')">My Works</a>
+    <a href="#" onclick="showOnly('resume')">Resume</a>
+  </nav>
+
+  <!-- Main Grid Container -->
+  <div class="grid-container">
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+      <div class="profile-card">
+        <div class="profile-pic-container">
+          <img src="pictures/IMG_E6714.JPG" alt="Carlo Boang's Profile Picture">
+        </div>
+        <h1 class="name">Hi, I'm Carlo Boang! 👋</h1>
+        <p class="tagline">An aspiring IT professional with a passion for learning and creating.</p>
+      </div>
+    </div>
+
+    <!-- Dynamic Content Sections -->
+    <div class="content">
+
+      <!-- About Me -->
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-wrapper">
+          <img src="pictures/IMG_E6714.JPG" alt="Carlo Boang" class="section-image centered-image" />
+          <p class="justified-text">
+            <b>I am Carlo T. Ebalin, the youngest child of Mr. Ralph Jordan M. Ebalin and Mrs. Edna T. Ebalin.
+            I was born at Batanes General Hospital in Basco, Batanes, and grew up in the municipality of Uyugan.
+            My early years were spent here, where I completed my elementary education at Uyugan Elementary School.
+            Afterward, I continued my studies at Batanes General Comprehensive High School, where I graduated.
+            Currently, I am pursuing a Bachelor of Science in Information Technology at Batanes State College.
+            I'm always eager to learn new technologies and apply my skills to real-world challenges!</b>
+          </p>
+        </div>
+      </section>
+
+      <!-- Hobbies -->
+      <section id="hobbies" class="section">
+        <h2>My Hobbies & Interests</h2>
+        <div class="image-gallery">
+          <div class="img-box">
+            <img src="pictures/IMG_4709.JPG" alt="Spearfishing" />
+            <p>Spearfishing</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/DKKS5802.JPEG" alt="Basketball" />
+            <p>Basketball</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/IMG_E6541.JPG" alt="Adventure" />
+            <p>Adventuring</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/IMG_1953.JPG" alt="Billiards" />
+            <p>Billiards</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/IMG_E2256.JPG" alt="Drinking Redhorse" />
+            <p>Enjoying Redhorse</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <h2>Skills & Strengths</h2>
+        <div class="image-gallery">
+          <div class="img-box">
+            <img src="pictures/communication-skills.jpg" alt="Communication Skill" />
+            <p>Effective Communication</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/IMG_7368.JPG" alt="Problem Solving" />
+            <p>Problem Solving</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/IMG_7579.JPG" alt="Sharpshooter" />
+            <p>Accuracy & Precision</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- My Works -->
+      <section id="works" class="section">
+        <h2>My Creative Works</h2>
+        <div class="image-gallery">
+          <div class="img-box">
+            <img src="pictures/activity%205.2.png" alt="Work: Reflection">
+            <p>Reflection Project</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/Activity5_Edit.jpg" alt="Work: Clones">
+            <p>Cloning Exercise</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/alteregopng.png" alt="Work: AlterEgo">
+            <p>AlterEgo Design</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/carloact4.jpg" alt="Work: Animation">
+            <p>Animation Project</p>
+          </div>
+          <div class="img-box">
+            <img src="pictures/MIRROR.png" alt="Work: Broken Glass Effect">
+            <p>Broken Glass Effect</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume -->
+      <section id="resume" class="section">
+        <h2>My Resume</h2>
+        <div class="resume-content">
+          <p>
+            Hello! This section is where my professional resume will be available for download.
+            I'm currently putting the finishing touches on it.
+            Please check back soon for an updated version with details on my education, experience, and projects.
+            In the meantime, feel free to explore my other sections! 😊
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Back Button -->
+    <div class="back-button">
+      <button onclick="goBack()" class="btn">Back</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Let's Connect!</p>
+    <ul>
+      <li><i class="fas fa-envelope"></i> carloebalin@gmail.com</li>
+      <li><i class="fas fa-phone"></i> 09196752475</li>
+      <li>
+        <i class="fas fa-share-alt"></i> Follow me:
+        <div class="social-icons">
+          <a href="https://www.facebook.com/carlo.ebalin" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+      </li>
+    </ul>
+    <p class="copy-text">&copy; 2025 Carlo Boang. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    let historyStack = [];
+
+    function showOnly(sectionId) {
+      const sections = document.querySelectorAll('.section');
+      const heroSection = document.querySelector('.hero-section');
+      const content = document.querySelector('.content');
+
+      sections.forEach(section => section.style.display = 'none'); 
+      document.getElementById(sectionId).style.display = 'block'; 
+
+      heroSection.style.display = 'none'; 
+      content.style.display = 'block'; 
+
+      if (historyStack[historyStack.length - 1] !== sectionId) {
+        historyStack.push(sectionId);
+      }
+    }
+
+    function goBack() {
+      const heroSection = document.querySelector('.hero-section');
+      const content = document.querySelector('.content');
+      const sections = document.querySelectorAll('.section');
+
+      if (historyStack.length > 1) {
+        historyStack.pop();
+        const previous = historyStack[historyStack.length - 1];
+        sections.forEach(section => {
+          section.style.display = section.id === previous ? 'block' : 'none';
+        });
+        heroSection.style.display = 'none';
+        content.style.display = 'block';
+      } else {
+        sections.forEach(section => section.style.display = 'none');
+        heroSection.style.display = 'flex'; 
+        content.style.display = 'none';
+        historyStack = [];
+      }
+    }
+
+    window.onload = () => {
+      const sections = document.querySelectorAll('.section');
+      sections.forEach(section => section.style.display = 'none');
+      document.querySelector('.content').style.display = 'none'; 
+      document.querySelector('.hero-section').style.display = 'flex'; 
+      historyStack = [];
+    };
+  </script>
+</body>
+</html>
